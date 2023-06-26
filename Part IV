@@ -1,0 +1,8 @@
+from datetime import datetime
+# Get current date
+datetime_object = datetime.now()
+def height():
+ ft = int(input("Feet: "))
+ inch = int(input("Inches: "))
+ return str(ft) + "'" + str(inch) + "\""
+print(datetime_object, height())
