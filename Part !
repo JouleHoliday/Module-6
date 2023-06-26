@@ -1,0 +1,8 @@
+import sys
+import datetime
+current_time = datetime.datetime.now().strftime("%Y-%m-%d 96H:96M:%S")
+for line in sys.stdin:
+        data = line.strip().split("It")
+        if len(data) == 6:
+            date, time, store, item, cost, payment = data
+            print("(O]\t[1]\t[2)".format(item, cost,current_time))
